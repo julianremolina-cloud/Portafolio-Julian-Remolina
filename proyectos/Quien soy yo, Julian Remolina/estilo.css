@@ -1,0 +1,172 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px blue solid; */
+}
+
+#nombre {
+    width: 80%;
+    text-align: left;
+    padding: 0px 100px ;
+}
+
+.nombre2{
+    font-size: 25px;
+    margin-top: 25px;
+}
+
+.quiensoy{
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: orangered;
+    font-weight: bolder;
+    text-align: left;
+}
+
+.descripcion1{
+    font-size: 18px;
+    text-align: left;
+}
+
+.descripcion2{
+    background-color: orangered;
+    width: 50%;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.imagen{
+    width: 300px;
+    height: auto;
+    margin-top: 40px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.7));
+}
+
+.imagen2{
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0px 0px 6px rgba(0, 0, 0, 0.7));
+}
+
+.bloque3{
+    background-color: orangered;
+    text-align: center;
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+}
+
+.boton{
+    text-align: left;
+    margin-top: 15px;
+}
+
+.boton button{
+    background-color: orangered;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.boton button:hover{
+    background-color: rgb(119, 68, 49);
+}
+
+.botones{
+    text-align: center;
+    margin-top: 10px;
+    background-color: orangered;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    border: none;
+}
+
+.botones:hover{
+    background-color: rgb(119, 68, 49);
+}
+
+.tabla1{
+    background-color: orangered;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-size: 20px;
+}
+.tabla2{
+    margin: 0px auto;
+    width: 70%;
+    text-align: center;
+    padding: 20px;
+    border-spacing: 0px;
+}
+
+.tabla3{
+    width: 100%;
+    padding: 30px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.widget{
+    width: 300px;
+    height: auto;
+}
+
+.CV{
+    width: 300px;
+    height: auto;
+}
+
+.proyecto{
+    width: 300px;
+    height: auto;
+}
+
+.proximo{
+    width: 300px;
+    height: auto;
+}
+
+.cont-img{
+    height: 190px;
+    align-content: center;
+}
+
+.titulos{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.textos{
+    width: 70%;
+    margin: 0 auto;
+}
+
+.mispro{
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.footer{
+    background-color: rgb(126, 72, 53);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+}
+
+.f{
+    text-align: right;
+}
