@@ -4,6 +4,7 @@
     box-sizing: border-box;
     /* border: 1px blue solid; */
 }
+
 #nombre {
     width: 80%;
     text-align: left;
@@ -72,6 +73,7 @@
     cursor: pointer;
     color: white;
     border: none;
+    margin-bottom: 10px;
 }
 
 .boton button:hover{
@@ -115,7 +117,7 @@
     padding: 30px;
     font-size: 20px;
     text-align: center;
-    /* border: 1px solid gray; */
+    border-spacing: 20px;
 }
 
 .widget{
@@ -176,9 +178,13 @@
 }
 
 .f{
-    margin-left: 1450px;
+    margin-left: 1600px;
 }
 
 .bordes{
     border: 1px solid rgb(223, 223, 223);
+}
+
+.espacio {
+    margin: 20px;
 }
