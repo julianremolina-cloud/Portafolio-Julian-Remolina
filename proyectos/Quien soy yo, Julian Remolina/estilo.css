@@ -8,7 +8,12 @@
 #nombre {
     width: 80%;
     text-align: left;
-    padding: 0px 50px ;
+    padding: 0px 25px ;
+}
+
+.item{
+    text-align: right;
+    padding: 0px 22px;
 }
 
 .nombre2{
@@ -116,6 +121,7 @@
     width: 100%;
     padding: 30px;
     font-size: 20px;
+    table-layout: fixed;
     text-align: center;
     border-spacing: 20px;
 }
@@ -178,7 +184,7 @@
 }
 
 .f{
-    margin-left: 1600px;
+    margin-left: 1625px;
 }
 
 .bordes{
