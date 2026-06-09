@@ -1,0 +1,268 @@
+:root {
+
+    --color-fondo: #F5E6CC;
+    --color-principal: #885E3C;
+    --color-secundario: #D9A441;
+    --color-texto: #382023;
+    --color-blanco: #FFFFFF;
+
+    --fuente-titulo: "Pacifico", cursive;
+    --fuente-texto: "Poppins", sans-serif;
+}
+
+/* RESET */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.6;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.contenedor{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ENCABEZADO */
+
+header{
+    background-color: var(--color-principal);
+    padding: 10px 0;
+}
+
+.encabezado{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo{
+    width: 180px;
+    height: auto;
+    display: block;
+}
+
+/* MENÚ */
+
+.menu{
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu a{
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-weight: 500;
+}
+
+.menu a:hover{
+    color: var(--color-secundario);
+}
+
+/* INICIO */
+
+.inicio{
+    padding: 80px 0;
+}
+
+.contenido-inicio{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.texto-inicio{
+    flex: 1;
+}
+
+.imagen-inicio{
+    flex: 1;
+}
+
+.texto-inicio h2{
+    font-family: var(--fuente-titulo);
+    color: var(--color-principal);
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.texto-inicio p{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+.boton{
+    display: inline-block;
+    text-decoration: none;
+    background-color: var(--color-secundario);
+    color: var(--color-blanco);
+    padding: 14px 28px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.boton:hover{
+    opacity: 0.8;
+}
+
+/* PRODUCTOS */
+
+.productos{
+    padding: 80px 0;
+}
+
+.productos h2{
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    color: var(--color-principal);
+    margin-bottom: 40px;
+}
+
+.productos h2::before{
+    content: "🥖 ";
+}
+
+.cuadricula-productos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.tarjeta{
+    background-color: var(--color-blanco);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.tarjeta img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.tarjeta h3{
+    margin-top: 15px;
+    color: var(--color-principal);
+}
+
+.tarjeta p{
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* VIDEOS */
+
+.videos{
+    padding: 80px 0;
+}
+
+.videos h2{
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    color: var(--color-principal);
+    margin-bottom: 40px;
+}
+
+.contenedor-videos{
+    display: flex;
+    gap: 30px;
+}
+
+.video{
+    flex: 1;
+}
+
+.video iframe{
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+}
+
+.video p{
+    text-align: center;
+    margin-top: 15px;
+}
+
+/* CONTACTO */
+
+.contacto{
+    padding: 80px 0;
+}
+
+.contacto h2{
+    text-align: center;
+    font-family: var(--fuente-titulo);
+    color: var(--color-principal);
+    margin-bottom: 30px;
+}
+
+.datos-contacto{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: var(--color-principal);
+    color: var(--color-blanco);
+    text-align: center;
+    padding: 25px;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .encabezado{
+        flex-direction: column;
+    }
+
+    .logo{
+        width: 140px;
+    }
+
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contenido-inicio{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contenedor-videos{
+        flex-direction: column;
+    }
+
+    .texto-inicio h2{
+        font-size: 27px;
+    }
+}
