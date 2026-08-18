@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tarjeta de perfil</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+
+<body>
+
+    <div class="tarjeta">
+
+        <h1 id="nombre"></h1>
+        <img id="avatar">
+        <p id="genero" class="centrar"></p>
+        <p id="edad" class="centrar"></p>
+        <p id="pais" class="centrar"></p>
+        <p id="ciudad" class="centrar"></p>
+        <p id="telefono" class="centrar"></p>
+        <p id="correo" class="centrar"></p>
+
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+
+            let parametros =
+                new URLSearchParams(
+                    window.location.search
+                )
+
+            let id =
+                parametros.get("id")
+
+            console.log("ID recibido:", id)
+
+
+            let usuarios =
+                JSON.parse(
+                    localStorage.getItem("usuarios")
+                )
+
+            console.log("Usuarios:", usuarios)
+
+            let usuario =
+                usuarios.find(
+                    usuario =>
+                        usuario.login.uuid === id
+                )
+
+            console.log(
+                "Usuario encontrado:",
+                usuario
+            )
+
+            let nombre =
+                document.getElementById("nombre")
+            let img =
+                document.getElementById("avatar")
+            let genero =
+                document.getElementById("genero")
+            let telefono =
+                document.getElementById("telefono")
+            let edad =
+                document.getElementById("edad")
+            let correo =
+                document.getElementById("correo")
+            let ciudad =
+                document.getElementById("ciudad")
+            let pais =
+                document.getElementById("pais")
+
+            nombre.textContent =
+                usuario.name.first +
+                " " +
+                usuario.name.last
+
+            img.src =
+                usuario.picture.large
+
+            genero.textContent =
+                "Género: " +
+                usuario.gender
+
+            telefono.textContent =
+                "Teléfono: " +
+                usuario.phone
+
+            edad.textContent =
+                "Edad: " +
+                usuario.dob.age
+
+            correo.textContent =
+                "Correo: " +
+                usuario.email
+
+            ciudad.textContent =
+                "Ciudad: " +
+                usuario.location.city
+
+            pais.textContent =
+                "País: " +
+                usuario.location.country
+
+        })
+
+    </script>
+
+
+</body>
+
+</html>
